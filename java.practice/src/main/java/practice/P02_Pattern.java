@@ -44,7 +44,27 @@ public class P02_Pattern {
 			AB
 			A  */
 			
-			patteren_4(n);
+			//patteren_4(n);
+		
+		/* 	*
+		   **
+		  ***
+		 ****
+		*****	*/
+		
+		Patteren_5(n);
+	}
+
+	private static void Patteren_5(int n) {
+		for(int i = 1 ; i <= n ; i++) {
+			for (int k = n-i; k >= 1 ; k--) {
+				System.out.print(" ");
+			}
+			for (int j = i; j >= 1 ; j--) {
+				System.out.print('*');
+			}
+			System.out.println();
+		}
 	}
 
 	private static void createPattern1(int n) {

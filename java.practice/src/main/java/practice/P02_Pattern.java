@@ -4,14 +4,14 @@ public class P02_Pattern {
 
 	public static void main(String[] args) {
 		int n = 5;
-/*
-	     	1
-		   2 2
-		  3 3 3
-		 4 4 4 4
-		5 5 5 5 5
-*/
-		createPattern1(n);
+	/*
+		     	1
+			   2 2
+			  3 3 3
+			 4 4 4 4
+			5 5 5 5 5
+	*/
+			createPattern1(n);
 		
 		
 		/*	1 
@@ -46,16 +46,16 @@ public class P02_Pattern {
 			
 			//patteren_4(n);
 		
-		/* 	*
-		   **
-		  ***
-		 ****
-		*****	*/
-		
-		Patteren_5(n);
+			/* 	*
+			   **
+			  ***
+			 ****
+			*****	*/
+			
+			patteren_5(n);
 	}
 
-	private static void Patteren_5(int n) {
+	private static void patteren_5(int n) {
 		for(int i = 1 ; i <= n ; i++) {
 			for (int k = n-i; k >= 1 ; k--) {
 				System.out.print(" ");
@@ -69,14 +69,11 @@ public class P02_Pattern {
 
 	private static void createPattern1(int n) {
 		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n - i; j++) {
+			for (int k = n-i; k >= 1; k--) {
 				System.out.print(" ");
 			}
-			for (int k = i; k <= i; k++) {
-				System.out.print(k);
-			}
-			for (int l = i - 1; l >= 1; l--) {
-				System.out.print(" " + i);
+			for (int j = i; j >= 1; j--) {
+				System.out.print(i+" ");
 			}
 			System.out.println();
 		}
